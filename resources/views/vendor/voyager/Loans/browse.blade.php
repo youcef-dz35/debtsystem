@@ -83,6 +83,7 @@
                                                 <input type="checkbox" class="select_all">
                                             </th>
                                         @endif
+
                                         @foreach($dataType->browseRows as $row)
                                         <th>
                                             @if ($isServerSide && $row->type !== 'relationship')
@@ -119,6 +120,7 @@
                                             }
                                             @endphp
                                             <td>
+
                                                 @if (isset($row->details->view))
                                                     @include($row->details->view, ['row' => $row, 'dataType' => $dataType, 'dataTypeContent' => $dataTypeContent, 'content' => $data->{$row->field}, 'action' => 'browse', 'view' => 'browse', 'options' => $row->details])
                                                 @elseif($row->type == 'image')

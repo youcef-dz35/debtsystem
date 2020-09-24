@@ -1,13 +1,13 @@
 Debt system todos:
-I:      Create the users and the cheafs and the admin
-II:     Name the roles
-III:    Create the loans
-IV:     Create diffrent types of loans
+I:      Create the users and the cheafs and the admin                                done 100%
+II:     Name the roles                                                               done 100%
+III:    Create the loans                                                             done 100%
+IV:     Create diffrent types of loans                                               working on it
 V:      define the deadlines of the loans
 VI:     Each investement must have it's own loan request
 VII:    Each loan must have it's own envelope
 VII:    Each envelope must have a deadline
-IX:     Each envelope must calculate interests 
+IX:     Each envelope must calculate interests
 X:      For each reimbursement check whether the amount to refund is available.
 
-            AND GOOD LUCK TO ME heh 
+            AND GOOD LUCK TO ME heh
