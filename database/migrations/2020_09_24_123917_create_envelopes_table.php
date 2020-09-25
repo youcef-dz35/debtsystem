@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateLoansTable extends Migration
+class CreateEnvelopesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,18 +13,14 @@ class CreateLoansTable extends Migration
      */
     public function up()
     {
-        Schema::create('loans', function (Blueprint $table) {
+        Schema::create('envelopes', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->unsignedBigInteger('user_id');
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
-            $table->string('terme_type');
-
-            $table->string('species_type');
-            $table->timestamp('deadline');
-            $table->integer('amount');
-            $table->string('description');
+            $table->unsignedBigInteger('loan_id');
+            $table->foreign('loan_id')->references('id')->on('loans')->onDelete('cascade');
             $table->timestamps();
-
+            //calculate the deadline with the ammount surplus
 
         });
     }
@@ -36,7 +32,6 @@ class CreateLoansTable extends Migration
      */
     public function down()
     {
-
-        Schema::dropIfExists('loans');
+        Schema::dropIfExists('envelopes');
     }
 }

@@ -11,4 +11,8 @@ class Loan extends Model
     {
         return $this->belongsTo('App\User');
     }
+    public function envelope()
+    {
+        return $this->hasOne('App\Envelope');
+    }
 }

@@ -2,12 +2,12 @@ Debt system todos:
 I:      Create the users and the cheafs and the admin                                done 100%
 II:     Name the roles                                                               done 100%
 III:    Create the loans                                                             done 100%
-IV:     Create diffrent types of loans                                               working on it
-V:      define the deadlines of the loans
-VI:     Each investement must have it's own loan request
-VII:    Each loan must have it's own envelope
-VII:    Each envelope must have a deadline
-IX:     Each envelope must calculate interests
+IV:     Create diffrent types of loans                                               done 100%
+V:      define the deadlines of the loans                                            done 100%
+VI:     Each investement must have it's own loan request                             done I think it's not important to the degree of creating a model and an table for it it's gonna be with the enveloppe description
+VII:    Each loan must have it's own envelope                                        done 100$
+VII:    Each envelope must have a deadline                                           done I did it in the loans table
+IX:     Each envelope must calculate interests                                       this one is gonna take a while i guess
 X:      For each reimbursement check whether the amount to refund is available.
 
             AND GOOD LUCK TO ME heh
